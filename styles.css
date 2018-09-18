@@ -1,0 +1,31 @@
+:root {
+  --black: #111;
+  --white: #fff;
+  --grey: #383838;
+  --sky: #92d3d5;
+  --grass: #99ce86;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--sky);
+  background: linear-gradient(to bottom, var(--sky) 0%, var(--white)100%);
+}
+
+.ground {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: calc(50vh - 100px);
+  background-color: var(--grass);
+}
