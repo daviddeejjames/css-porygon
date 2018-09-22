@@ -8,6 +8,7 @@
   --pink-two: #f97d88;
   --pink-three: #d87478;
   --pink-four: #ce6d7a;
+  --neck: #c3737e;
 
   --blue-one: #c3e1ec;
   --blue-two: #95d3cd;
@@ -63,7 +64,7 @@ body {
 
 .head-wrapper {
   position: absolute;
-  top: 35px;
+  top: 38px;
   right: 272px;
   transform: rotate(-8deg);
   will-change: transform;
@@ -233,6 +234,27 @@ body {
   border-top: 28.87px solid var(--white);
 }
 
+.neck {
+  position: absolute;
+  top: 194px;
+  right: 267px;
+  border-top: 38px solid var(--neck);
+  border-left: 113px inset transparent;
+  border-right: 62px inset transparent;
+  transform: rotate(-2deg);
+}
+
+.body-back-bottom {
+  position: absolute;
+  width: 120px;
+  top: 338px;
+  right: 149px;
+  transform: rotate(-17deg) skew(-15deg);
+  border-top: 70px solid var(--pink-four);
+  border-left: 35px inset transparent;
+  border-right: 64px inset transparent;
+}
+
 .body-back-top {
   position: absolute;
   width: 130px;
@@ -280,6 +302,15 @@ body {
   will-change: transform;
 }
 
+/* Duplicate and move the leg */
+.left-leg {
+  position: relative;
+  top: 62px;
+  left: -325px;
+  transform: rotate(-14deg);
+}
+
+.left-leg .leg-top,
 .right-leg .leg-top {
   position: absolute;
   top: 308px;
@@ -290,6 +321,7 @@ body {
   background-color: var(--blue-one);
 }
 
+.left-leg .leg-front,
 .right-leg .leg-front {
   width: 68px;
   height: 30px;
@@ -300,6 +332,7 @@ body {
   background-color: var(--blue-two);
 }
 
+.left-leg .leg-side,
 .right-leg .leg-side {
   position: absolute;
   width: 155px;
@@ -310,6 +343,7 @@ body {
   transform: rotate(21deg) skew(5deg);
 }
 
+.left-leg .leg-side:after,
 .right-leg .leg-side:after {
   content: '';
   width: 69px;
@@ -321,6 +355,20 @@ body {
   border-right: 51px inset transparent;
 }
 
+
+.right-leg .leg-top {
+  position: absolute;
+  top: 308px;
+  right: 169px;
+  transform: rotate(-28deg) skew(41deg);
+  width: 125px;
+  height: 50px;
+  background-color: var(--blue-one);
+}
+
+.right-leg .leg-front {
+  background-color: var(--blue-two);
+}
 
 .tail {
   will-change: transform;
