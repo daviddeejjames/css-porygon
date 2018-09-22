@@ -256,7 +256,7 @@ body {
 .body-front-highlight {
   position: absolute;
   top: 216px;
-  left: 301px;
+  right: 317px;
   transform: skew(-2deg);
   border-left: 42px solid var(--blue-two);
   border-top: 72px inset transparent;
@@ -267,7 +267,7 @@ body {
   position: absolute;
   width: 91px;
   top: 203px;
-  left: 147px;
+  right: 341px;
   transform: rotate(13deg) skew(-1deg);
   border-bottom: 150px solid var(--blue-one);
   border-left: 51px inset transparent;
@@ -278,7 +278,7 @@ body {
   position: absolute;
   width: 128px;
   top: 359px;
-  left: 161px;
+  right: 328px;
   transform: rotate(13deg) skew(56deg);
   border-top: 52px solid var(--blue-four);
   border-left: 14px inset transparent;
@@ -325,7 +325,7 @@ body {
   width: 155px;
   height: 45px;
   top: 384px;
-  left: 394px;
+  right: 109px;
   background-color: var(--blue-three);
   transform: rotate(21deg) skew(5deg);
 }
@@ -381,4 +381,15 @@ body {
   border-bottom: 160px solid var(--blue-three);
   border-left: 26px inset transparent;
   border-right: 26px inset transparent;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    overflow: hidden;
+  }
+
+  .porygon-wrapper {
+    transform: scale(0.4) translateY(150px);
+    transform-origin: 330px;
+  }
 }
