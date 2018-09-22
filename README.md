@@ -6,5 +6,5 @@ Based on these Pokemon card artworks:
 
 ![Porygon Card 2](http://static.api6.studiobebop.net/pokemon_data/card_images/Porygon__71_108__Evolutions.jpg)
 
-Viewable here TBA
+Viewable [here!](https://daviddeejjames.github.io/css-porygon/)
 
