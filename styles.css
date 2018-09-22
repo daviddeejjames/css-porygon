@@ -53,7 +53,7 @@ body {
   position: absolute;
   top: 38px;
   right: 272px;
-  transform: rotate(-8deg);
+  transform: rotate(-13deg);
   will-change: transform;
 }
 
@@ -289,12 +289,17 @@ body {
   will-change: transform;
 }
 
-/* Duplicate and move the leg */
 .left-leg {
   position: relative;
-  top: 62px;
-  left: -325px;
+  top: 31px;
+  left: -306px;
+  transform: rotate(-21deg);
+  transform-origin: 392px 160px;
+}
+
+.right-leg {
   transform: rotate(-14deg);
+  transform-origin: 486px 422px;
 }
 
 .left-leg .leg-top,
@@ -390,6 +395,6 @@ body {
 
   .porygon-wrapper {
     transform: scale(0.4) translateY(150px);
-    transform-origin: 330px;
+    transform-origin: 300px;
   }
 }
