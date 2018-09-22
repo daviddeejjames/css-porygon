@@ -1,6 +1,8 @@
 # css-porygon 💠
 CSS only Porygon from Pokemon
 
+He likes the pats!
+
 Viewable [here!](https://daviddeejjames.github.io/css-porygon/)
 
 ### Inspiration
