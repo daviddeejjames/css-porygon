@@ -49,12 +49,33 @@ body {
   cursor: pointer;
 }
 
+.porygon-wrapper:hover .tail-wrapper,
+.porygon-wrapper:hover .head-wrapper,
+.porygon-wrapper:hover .leg-wrapper{
+  animation-play-state: running;
+}
+
+.porygon-wrapper:hover .eye-ball {
+  border-bottom: 4px solid var(--black);
+  border-right: 4px solid var(--black);
+  width: 15px;
+  height: 15px;
+  border-radius: 0;
+  transform: rotate(-111deg);
+  background-color: transparent;
+}
+
 .head-wrapper {
   position: absolute;
   top: 38px;
   right: 272px;
   transform: rotate(-13deg);
   will-change: transform;
+  animation: head-bounce 0.5s linear;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+  animation-fill-mode: forwards;
 }
 
 .mid-head {
@@ -287,19 +308,24 @@ body {
 
 .leg-wrapper {
   will-change: transform;
+  animation: leg-bounce 0.5s linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+  animation-fill-mode: forwards;
 }
 
 .left-leg {
   position: relative;
-  top: 31px;
-  left: -306px;
-  transform: rotate(-21deg);
-  transform-origin: 392px 160px;
+  top: 0;
+  left: -265px;
+  transform-origin: 461px 387px;
 }
 
 .right-leg {
   transform: rotate(-14deg);
   transform-origin: 486px 422px;
+  animation-direction: alternate-reverse;
 }
 
 .left-leg .leg-top,
@@ -362,8 +388,14 @@ body {
   background-color: var(--blue-two);
 }
 
-.tail {
+.tail-wrapper {
   will-change: transform;
+  animation: head-bounce 0.5s linear;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  transform-origin: 653px 283px;
+  animation-play-state: paused;
+  animation-fill-mode: forwards;
 }
 
 .tail-top {
@@ -388,6 +420,30 @@ body {
   border-right: 26px inset transparent;
 }
 
+
+@keyframes leg-bounce {
+  0% {
+    transform: translate3d(0px,0px,0px) rotate(-10deg);
+
+  }
+
+  100% {
+    transform: translate3d(0px,0px,0px) rotate(10deg);
+  }
+}
+
+@keyframes head-bounce {
+  0% {
+    transform: translate3d(0px,0px,0px) rotate(-10deg);
+
+  }
+
+  100% {
+    transform: translate3d(0px,0px,0px) rotate(-18deg);
+  }
+}
+
+/* Responsive */
 @media screen and (max-width: 700px) {
   body {
     overflow: hidden;
