@@ -183,7 +183,7 @@ body {
   position: absolute;
   top: 87px;
   left: -213px;
-  transform: rotate(23deg) skew(26deg);
+  transform: rotate(22deg) skew(26deg);
   background-color: var(--blue-four);
 }
 
