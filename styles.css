@@ -41,25 +41,12 @@ body {
   background-color: var(--grass);
 }
 
-.the-fake {
-  display: block;
-  width: 630px;
-  height: 565px;
-  position: absolute;
-  transform: rotate(-4deg);
-  margin: auto;
-  opacity: 0.4;
-  background-image: url(porygon.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 .porygon-wrapper {
   display: block;
   width: 660px;
   height: 520px;
   position: relative;
-  /* cursor: pointer; */
+  cursor: pointer;
 }
 
 .head-wrapper {
