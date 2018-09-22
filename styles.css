@@ -2,7 +2,14 @@
   --black: #111;
   --white: #fff;
   --sky: skyblue;
+  --grass-top: #85b92f;
   --grass: #99ce86;
+
+  --mountain-left: #86cd29;
+  --mountain-right: #5db231;
+
+  --shrub: #2f9228;
+  --trunk: #363a30;
 
   --pink-one: #f897ab;
   --pink-two: #f97d88;
@@ -22,6 +29,7 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
+  overflow: hidden;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -37,9 +45,107 @@ body {
   left: 0;
   right: 0;
   width: 100%;
-  height: calc(50vh - 100px);
-  background-color: var(--grass);
+  height: 65vh;
+  background: linear-gradient(to bottom, var(--grass-top) 0%, var(--grass)100%);
 }
+
+.mountain-one {
+  position: absolute;
+  bottom: 65vh;
+  right: 120vh;
+  transform: scaleY(0.7);
+  transform-origin: 50% 100%;
+}
+
+.mountain-two {
+  position: absolute;
+  bottom: 65vh;
+  right: 90vh;
+}
+
+.mountain-left {
+  border-bottom: 180px solid var(--mountain-left);
+  border-left: 260px inset transparent;
+  border-right: 260px inset transparent;
+}
+
+.mountain-right {
+  position: absolute;
+  top: 0;
+  right: 76px;
+  border-bottom: 180px solid var(--mountain-right);
+  border-left: 0 inset transparent;
+  border-right: 104px inset transparent;
+  transform: skew(42deg);
+}
+
+.tree-one {
+  position: absolute;
+  bottom: 60vh;
+  right: 23vh;
+  transform-origin: 50% 100%;
+}
+
+.tree-two {
+  position: absolute;
+  bottom: 55vh;
+  right: 42vh;
+  transform: scaleY(1.2);
+  transform-origin: 50% 100%;
+}
+
+.tree-three {
+  position: absolute;
+  bottom: 60vh;
+  right: 55vh;
+  transform: scale(0.8);
+  transform-origin: 50% 100%;
+}
+
+.tree-four {
+  position: absolute;
+  bottom: 34vh;
+  left: 0;
+  transform: scale(3);
+  transform-origin: 50% 100%;
+}
+
+.trunk {
+  position: relative;
+  right: 6px;
+  width: 25px;
+  height: 100px;
+  background-color: var(--trunk);
+}
+
+.shrub {
+  position: absolute;
+  border-bottom: 60px solid var(--shrub);
+  border-left: 80px inset transparent;
+  border-right: 80px inset transparent;
+}
+
+.shrub-one {
+  top: -28px;
+  right: -62px;
+}
+
+.shrub-two {
+  top: -68px;
+  right: -42px;
+  border-left-width: 60px;
+  border-right-width: 60px;
+}
+
+.shrub-three {
+  top: -98px;
+  right: -22px;
+  border-bottom-width: 50px;
+  border-left-width: 40px;
+  border-right-width: 40px;
+}
+
+
 
 .porygon-wrapper {
   display: block;
@@ -384,10 +490,6 @@ body {
   background-color: var(--blue-one);
 }
 
-.right-leg .leg-front {
-  background-color: var(--blue-two);
-}
-
 .tail-wrapper {
   will-change: transform;
   animation: head-bounce 0.5s linear;
@@ -444,6 +546,13 @@ body {
 }
 
 /* Responsive */
+@media screen and (max-width: 1450px) {
+  .tree-four {
+    display: none;
+  }
+}
+
+
 @media screen and (max-width: 700px) {
   body {
     overflow: hidden;
