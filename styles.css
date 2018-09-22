@@ -233,9 +233,117 @@ body {
   border-top: 28.87px solid var(--white);
 }
 
+.body-back-top {
+  position: absolute;
+  width: 130px;
+  top: 206px;
+  right: 191px;
+  transform: rotate(-17deg) skew(17deg);
+  border-bottom: 142px solid var(--pink-one);
+  border-left: 66px inset transparent;
+  border-right: 30px inset transparent;
+}
 
+.body-front-highlight {
+  position: absolute;
+  top: 216px;
+  left: 301px;
+  transform: skew(-2deg);
+  border-left: 42px solid var(--blue-two);
+  border-top: 72px inset transparent;
+  border-bottom: 81px inset transparent;
+}
+
+.body-front-top {
+  position: absolute;
+  width: 91px;
+  top: 203px;
+  left: 147px;
+  transform: rotate(13deg) skew(-1deg);
+  border-bottom: 150px solid var(--blue-one);
+  border-left: 51px inset transparent;
+  border-right: 30px inset transparent;
+}
+
+.body-front-bottom {
+  position: absolute;
+  width: 128px;
+  top: 359px;
+  left: 161px;
+  transform: rotate(13deg) skew(56deg);
+  border-top: 52px solid var(--blue-four);
+  border-left: 14px inset transparent;
+  border-right: 30px inset transparent;
+}
+
+.leg-wrapper {
+  will-change: transform;
+}
+
+.right-leg .leg-top {
+  position: absolute;
+  top: 308px;
+  right: 169px;
+  transform: rotate(-28deg) skew(41deg);
+  width: 125px;
+  height: 50px;
+  background-color: var(--blue-one);
+}
+
+.right-leg .leg-front {
+  width: 68px;
+  height: 30px;
+  position: absolute;
+  top: 360px;
+  right: 257px;
+  transform: rotate(20deg) skew(-2deg);
+  background-color: var(--blue-two);
+}
+
+.right-leg .leg-side {
+  position: absolute;
+  width: 155px;
+  height: 45px;
+  top: 384px;
+  left: 394px;
+  background-color: var(--blue-three);
+  transform: rotate(21deg) skew(5deg);
+}
+
+.right-leg .leg-side:after {
+  content: '';
+  width: 69px;
+  position: absolute;
+  top: -77px;
+  left: -32px;
+  border-bottom: 78px solid var(--blue-three);
+  border-left: 67px inset transparent;
+  border-right: 51px inset transparent;
+}
 
 
 .tail {
+  will-change: transform;
+}
 
+.tail-top {
+  position: absolute;
+  width: 8px;
+  top: 111px;
+  right: 139px;
+  transform: rotate(31deg) skew(-5deg);
+  border-bottom: 166px solid var(--blue-one);
+  border-left: 26px inset transparent;
+  border-right: 26px inset transparent;
+}
+
+.tail-bottom {
+  position: absolute;
+  width: 8px;
+  top: 130px;
+  right: 124px;
+  transform: rotate(52deg) skew(25deg);
+  border-bottom: 160px solid var(--blue-three);
+  border-left: 26px inset transparent;
+  border-right: 26px inset transparent;
 }
