@@ -606,6 +606,13 @@ body {
 }
 
 /* Responsive */
+@media screen and (max-height: 770px) {
+  .porygon-wrapper {
+    transform: scale(0.8) translateY(50px);
+    transform-origin: 300px;
+  }
+}
+
 @media screen and (max-width: 1450px) {
   .tree-four {
     display: none;
